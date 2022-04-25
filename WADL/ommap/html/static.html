@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImage" onclick="changeImage()" src="https://qph.fs.quoracdn.net/main-qimg-9c81a54813716fccd8e3608ab2f51dcf-lq" width="20%" height="20%">
+
+<p>Click the coin to flip it</p>
+
+<script>
+var t=0;
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (t%2==0) {
+    image.src = "https://qph.fs.quoracdn.net/main-qimg-148ae81e6fe0500e130fb547026a9b26-lq";
+  } else {
+    image.src = "https://qph.fs.quoracdn.net/main-qimg-9c81a54813716fccd8e3608ab2f51dcf-lq";
+  }
+  t++;
+}
+</script>
+
+</body>
+</html>

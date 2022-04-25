@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin Dashboard</title>
+    <style>
+        label
+        {
+            display: inline-block;
+            text-align: right;
+            width:100px ;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .div-deg{
+            background-color: skyblue;
+            width: 400px;
+            height: 500px;
+            padding-top: 70px;
+            padding-bottom: 170px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="admin_home.html" class="btn btn-info">Admin Dashboard</a>
+
+        <div class="logout">
+
+            <a href="logout.html" class="btn btn-primary">Logout</a>
+
+        </div>
+
+    </header>
+
+
+    <aside>
+
+        <ul>
+
+        
+
+            <li>
+                
+                <div style="height: 30px; align-items: center;">
+                    <a href="admission.html">Admission</a>
+                </div>
+
+            </li>
+
+            <li>
+                
+                <div style="height: 30px; align-items: center;">
+                    <a href="add_student.html">Add Student</a>
+                </div>
+
+            </li>
+            
+            <li>
+                
+                <div style="height: 30px; align-items: center;">
+                    <a href="view_student.html">View Student</a>
+                </div>
+
+            </li>
+            <li>
+                
+                <div style="background-color: skyblue; height: 30px; align-items: center; margin: 0;">
+                    <a href="add_teacher.html"><span style="color: #424a5b;">Add Teacher</span> </a>
+                </div>
+
+            </li>
+
+            <li>
+                
+                <div style="height: 30px; align-items: center;">
+                    <a href="view_teacher.html">View Teacher</a>
+                </div>
+
+            </li>
+            <li>
+                
+                <div style="height: 30px; align-items: center;">
+                    <a href="add_course.html">Add Courses</a>
+                </div>
+
+            </li>
+            <li>
+                
+                <div style="height: 30px; align-items: center;">
+                    <a href="view_course.html">View Courses</a>
+                </div>
+
+            </li>
+
+        </ul>
+
+
+    </aside>
+
+    <div class="content">
+        <center>
+        <h1>Add Teacher</h1>
+
+        <div class="div-deg">
+            <form action="">
+                <div>
+                    <label >Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    <label >Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label >Phone</label>
+                    <input type="number" name="Phone">
+                </div>
+                <div>
+                    <label >About Teacher</label>
+                    <input type="text" name="text">
+                </div>
+                <label>Upload Profile picture</label>
+                <span><input type="file" id="myFile" /> <br /><br /></span>
+                 
+                <div >
+                    <input type="submit" class="btn btn-primary" name="add_stud" value="Add Teacher">
+                </div>
+            </form>
+        </div>
+    </center>
+
+    </div>
+
+</body>
+
+</html>

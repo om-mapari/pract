@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="click" type="button">CLICK ME</button>
+    <!-- <p>You got: <span id="result"></span></p> -->
+    <img
+      id="myImage"
+      onclick="changeImage()"
+      src="head.jpeg"
+      width="100"
+      height="100"
+    />
+    <p>Flip the coin</p>
+    <script>
+      document.getElementById("click").onclick = click;
+
+      var heads = 0;
+      var tails = 0;
+      function click() {
+        x = Math.floor(Math.random() * 2) == 0;
+        var image = document.getElementById("myImage");
+        if (x) {
+          image.src = "head.jpeg";
+        } else {
+          image.src = "tail.jpeg";
+        }
+      }
+      function flip(coin) {
+        document.getElementById("result").innerHTML = coin;
+      }
+      function changeImage() {
+        x = Math.floor(Math.random() * 2) == 0;
+        var image = document.getElementById("myImage");
+        if (x) {
+          image.src = "head.jpeg";
+        } else {
+          image.src = "tail.jpeg";
+        }
+      }
+    </script>
+  </body>
+</html>
